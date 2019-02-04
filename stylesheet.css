@@ -1,0 +1,49 @@
+body{
+    font-family: futura-pt, sans-serif;
+    background-color: #E2E2E2;
+}
+.header{
+    position: fixed;
+    background-color: #333;
+    height: 75px;
+    width: 100vw;
+    line-height: 75px;
+    color: #EDF7F5;
+}
+
+.logo{
+    font-size:45px;
+    float: left;
+    padding-left: 50px;
+}
+li{
+    font-size: 30px;
+    list-style: none;
+    float: right;
+    padding-right: 30px;
+    line-height: normal;
+}
+.main{
+    height: 100vh;
+    position: relative;
+}
+.name{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 6vw;
+    line-height: 60%;
+    text-align: right;
+}
+h1{
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.logoimg{
+    /*background-image: url("img/nulogo.svg");*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
