@@ -1,6 +1,29 @@
-body{
-    font-family: futura-pt, sans-serif;
-    background-color: #E2E2E2;
+@keyframes open{
+    from{
+        height: 113%;
+    }
+    to{
+        height:80%;
+    }
+}
+@keyframes logoani{
+    from{
+        -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+        
+    }
+    to{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+li{
+    font-size: 30px;
+    list-style: none;
+    float: right;
+    padding-right: 30px;
+    line-height: normal;
 }
 .header{
     position: fixed;
@@ -9,41 +32,145 @@ body{
     width: 100vw;
     line-height: 75px;
     color: #EDF7F5;
+    z-index: 10;
 }
 
+
+body{
+    font-family: futura-pt, sans-serif;
+    background-color: #E2E2E2;
+    margin: 0px 0px ;
+}
+.top{
+    position:relative;
+    overflow: hidden;
+    height: 100vh;
+    
+}
+.top:before{
+    top: -50%;
+    left: -50%;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+    z-index: -1;
+}
+.top:after{
+    bottom: -75%;
+    right: -50%;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+    z-index: -1;
+}
+.top:before , .top:after{
+    animation: open 1.5s forwards;
+    animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 80%;
+    background-color: #fff;
+    overflow-x: hidden;
+    z-index: -1;
+    
+}
 .logo{
     font-size:45px;
     float: left;
     padding-left: 50px;
 }
-li{
-    font-size: 30px;
-    list-style: none;
-    float: right;
-    padding-right: 30px;
-    line-height: normal;
-}
-.main{
-    height: 100vh;
-    position: relative;
-}
 .name{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding-left: 6vw;
+    padding-left: 10vw;
     line-height: 60%;
     text-align: right;
+    z-index: -2;
 }
 h1{
-    font-size: 60px;
-    letter-spacing: 5px;
+    font-size: 80px;
+    padding-left: 4vw;
+    
 }
-.logoimg{
-    /*background-image: url("img/nulogo.svg");*/
+.top h1{
+    letter-spacing: 10px;
+    z-index: -2;
+}
+.logoimg img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.logoimg{
+    animation: logoani 3s forwards;
+    animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    z-index: -2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.square0{
+    background-color: #b7d7d8;
+}
+.square1{
+    background-color: #ff8984;
+}
+.square2{
+    background-color: #272727;
+}
+.square0, .square1, .square2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 250px;
+    z-index: -3;    
+}
+
+h2{
+    font-size: 50px;
+    letter-spacing: 5px;
+    top: 10%;
+    padding-left: 5vw;
+    
+}
+
+.main{
+    
+}
+.works{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.recently img{
+    
+    width: 25vw;
+}
+
+.about{
+    height: 100vh;
+    padding-left: 5vw; 
+}
+
+.about img{
+    width: 10vw;
+}
+.intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
 }
