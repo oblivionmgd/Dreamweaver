@@ -144,9 +144,6 @@ h2{
     
 }
 
-.main{
-    
-}
 .works{
     display: flex;
     justify-content: space-around;
@@ -161,8 +158,6 @@ h2{
 }
 
 .about{
-    height: 100vh;
-    padding-left: 5vw; 
 }
 
 .about img{
@@ -172,5 +167,16 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-left: 5vw;
     
+}
+.footer{
+    height: 20vh;
+    position: relative;
+}
+.logo-footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
