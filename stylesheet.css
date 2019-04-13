@@ -154,14 +154,15 @@ h2{
 }
 .recently img{
     
-    width: 25vw;
-}
-
-.about{
+    width: 20vw;
 }
 
 .about img{
-    width: 10vw;
+
+}
+.social img{
+    width: 2vw;
+    margin-left: 50px;
 }
 .intro{
     display: flex;
