@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@media (max-width: 414px){
+    li{
+    font-size: 30px;
+    list-style: none;
+    float: right;
+    padding-right: 30px;
+    line-height: normal;
+}
+.header{
+    position: fixed;
+    background-color: #333;
+    height: 75px;
+    width: 100vw;
+    line-height: 75px;
+    color: #EDF7F5;
+    z-index: 10;
+}
+
+
+body{
+    font-family: futura-pt, sans-serif;
+    background-color: #E2E2E2;
+    margin: 0px 0px ;
+}
+.top{
+    position:relative;
+    overflow: hidden;
+    height: 100vh;
+    
+}
+.top:before{
+    top: -50%;
+    left: -50%;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+    z-index: -1;
+}
+.top:after{
+    bottom: -75%;
+    right: -50%;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+    z-index: -1;
+}
+.top:before , .top:after{
+    animation: open 1.5s forwards;
+    animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 80%;
+    background-color: #fff;
+    overflow-x: hidden;
+    z-index: -1;
+    
+}
+.logo{
+    font-size:45px;
+    float: left;
+    padding-left: 50px;
+}
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    line-height: 70%;
+    z-index: -2;
+}
+h1{
+    font-size: 80px;
+    padding-left: 4vw;
+    
+}
+.top h1{
+    z-index: -2;
+}
+
+h2{
+    font-size: 50px;
+    letter-spacing: 5px;
+    top: 10%;
+    
+}
+.main{
+    margin:auto 5%;
+}
+
+.works{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.recently img{  
+    width: 250px;
+}
+
+.about img{
+
+}
+.social img{
+    width: 2vw;
+    margin-left: 50px;
+}
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer{
+    height: 20vh;
+    position: relative;
+}
+.logo-footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+    
+}
+

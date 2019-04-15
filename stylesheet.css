@@ -1,3 +1,7 @@
+@import url("style_smartphone.css") screen
+
+;
+@import url("style_tablet.css");
 @keyframes open{
     from{
         height: 113%;
@@ -17,6 +21,8 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
+
+@media screen and (min-width : 1280px ){
 
 li{
     font-size: 30px;
@@ -97,64 +103,28 @@ h1{
     letter-spacing: 10px;
     z-index: -2;
 }
-.logoimg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.logoimg{
-    animation: logoani 3s forwards;
-    animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    overflow: hidden;
-    width: 500px;
-    height: 500px;
-    z-index: -2;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
 
-.square0{
-    background-color: #b7d7d8;
-}
-.square1{
-    background-color: #ff8984;
-}
-.square2{
-    background-color: #272727;
-}
-.square0, .square1, .square2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 250px;
-    height: 250px;
-    z-index: -3;    
-}
+
 
 h2{
     font-size: 50px;
     letter-spacing: 5px;
     top: 10%;
-    padding-left: 5vw;
     
+}
+.main{
+    margin:auto 5%;
 }
 
 .works{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
     
 }
-.recently img{
-    
-    width: 500px;
+.recently img{  
+    width: 250px;
 }
 
 .about img{
@@ -169,7 +139,6 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-left: 5vw;
     
 }
 .footer{
@@ -181,4 +150,6 @@ h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+    
 }
