@@ -55,9 +55,7 @@
         opacity:0.5;
         z-index: 99;
     }
-    .menu-bg:hover{
-        transform:translate(200px);
-    }
+
     
 
 .header{
