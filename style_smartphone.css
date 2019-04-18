@@ -1,11 +1,27 @@
 @charset "UTF-8";
 
+@keyframes hamburger {
+    100%{
+        opacity: 0.0;
+        transform: translateX(24px);
+        z-index: 3;
+    }
+}
+@keyframes close {
+    100%{
+        width: 24px;
+        transform: rotate(90deg);
+        z-index: 4;
+    }
+}
+
 @media (max-width : 599px ){
+    
+    
     li{
     color: #333;
     font-size: 30px;
     list-style: none;
-
     padding-right: 30px;
     line-height: normal;
 }
@@ -25,7 +41,7 @@
         top: 12px;
         right: 15px;
         position: fixed;
-        z-index: 3;
+        z-index: 5;
         
     }
     .pan {
@@ -48,8 +64,8 @@
         top:31px;
     }
     
-    .pn0:hover{
-        transform: translateX(24px);
+    .burger:hover{
+        animation: hamburger 0.5s cubic-bezier(1.000, 0.000, 0.000, 1.000) forwards ;
     }
     
     .crosses{
@@ -63,7 +79,7 @@
     
     .cross{
         background-color: #FFF;
-        width: 24px;
+        width: 0px;
         height: 2px;
         position: absolute;
         left: 13px;
@@ -76,15 +92,15 @@
         transform: rotate(-45deg);
     }
     
-.header{
-    position: fixed;
-    background-color: #333;
-    height: 75px;
-    width: 100vw;
-    line-height: 75px;
-    color: #EDF7F5;
-    z-index: 10;
-    top: 0;
+    .header{
+        position: fixed;
+        background-color: #333;
+        height: 75px;
+        width: 100vw;
+        line-height: 75px;
+        color: #EDF7F5;
+        z-index: 10;
+        top: 0;
 }
 
 
@@ -195,4 +211,5 @@ h2{
     transform: translate(-50%,-50%);
 }
     
+
 }
