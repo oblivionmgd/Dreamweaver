@@ -47,7 +47,35 @@
     .pn2{
         top:31px;
     }
-
+    
+    .pn0:hover{
+        transform: translateX(24px);
+    }
+    
+    .crosses{
+        height: 50px;
+        width: 50px;
+        top: 36px;
+        right: 15px;
+        position: fixed;
+        z-index: 4;
+    }
+    
+    .cross{
+        background-color: #FFF;
+        width: 24px;
+        height: 2px;
+        position: absolute;
+        left: 13px;
+    }
+    
+    .c0{
+        transform: rotate(45deg);
+    }
+    .c1{
+        transform: rotate(-45deg);
+    }
+    
 .header{
     position: fixed;
     background-color: #333;
