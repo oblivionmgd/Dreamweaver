@@ -2,18 +2,31 @@
 
 @keyframes hamburger {
     100%{
-        opacity: 0.0;
-        transform: translateX(24px);
-        z-index: 3;
+        top: 24px;
     }
 }
-@keyframes close {
+
+@keyframes short1 {
     100%{
-        width: 24px;
-        transform: rotate(90deg);
-        z-index: 4;
+        width: 2px;
+        left: 24px;
     }
 }
+
+@keyframes rotate0{
+    
+    100%{
+        top: 24px;
+        transform: rotate(45deg);
+    }
+}
+@keyframes rotate2{
+    100%{
+        top: 24px;
+        transform: rotate(-45deg);
+    }
+}
+
 
 @media (max-width : 599px ){
     
@@ -64,32 +77,14 @@
         top:31px;
     }
     
-    .burger:hover{
-        animation: hamburger 0.5s cubic-bezier(1.000, 0.000, 0.000, 1.000) forwards ;
+    .burger:hover .pn1{
+        animation: short1 0.5s  ease forwards ;
     }
-    
-    .crosses{
-        height: 50px;
-        width: 50px;
-        top: 36px;
-        right: 15px;
-        position: fixed;
-        z-index: 4;
+    .burger:hover .pn0{
+        animation: rotate0 0.5s  ease forwards;
     }
-    
-    .cross{
-        background-color: #FFF;
-        width: 0px;
-        height: 2px;
-        position: absolute;
-        left: 13px;
-    }
-    
-    .c0{
-        transform: rotate(45deg);
-    }
-    .c1{
-        transform: rotate(-45deg);
+    .burger:hover .pn2{
+        animation: rotate2 0.5s  ease forwards;
     }
     
     .header{
