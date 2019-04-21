@@ -12,7 +12,6 @@
         left: 24px;
     }
 }
-
 @keyframes rotate0{
     
     100%{
@@ -27,6 +26,9 @@
     }
 }
 
+@keyframes menu{
+    
+}
 
 @media (max-width : 599px ){
     
