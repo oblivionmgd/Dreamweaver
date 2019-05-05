@@ -173,6 +173,12 @@ body{
     line-height: 70%;
     z-index: -2;
 }
+video{
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    z-index: -10;
+}
 h1{
     font-size: 50px;
     padding-left: 4vw;

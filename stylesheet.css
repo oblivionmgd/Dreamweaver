@@ -14,7 +14,7 @@
     from{
         -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
-        
+
     }
     to{
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -45,16 +45,16 @@ li{
 
 body{
     font-family: futura-pt, sans-serif;
-    background-color: #E2E2E2;
+    background-color: #FFFFFF;
     margin: 0px 0px ;
 }
 .top{
-    position:relative;
-    overflow: hidden;
+/*    position:relative;
+    overflow: hidden;*/
     height: 100vh;
-    
+
 }
-.top:before{
+/*.top:before{
     top: -50%;
     left: -50%;
     transform: rotate(-3deg);
@@ -79,8 +79,9 @@ body{
     background-color: #fff;
     overflow-x: hidden;
     z-index: -1;
-    
 }
+   */
+
 .logo{
     font-size:45px;
     float: left;
@@ -91,14 +92,33 @@ body{
     top: 50%;
     transform: translateY(-50%);
     padding-left: 10vw;
-    line-height: 60%;
+    line-height: 10%;
     text-align: right;
     z-index: -2;
 }
+video{
+    position: absolute;
+    width: 90vw;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.75;
+}
+.scroll{
+    font-size: 30px;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 84vh;
+    text-align: center;
+    line-height: 45px;
+    }
 h1{
     font-size: 80px;
     padding-left: 4vw;
-    
+
 }
 .top h1{
     letter-spacing: 10px;
@@ -111,7 +131,7 @@ h2{
     font-size: 50px;
     letter-spacing: 5px;
     top: 10%;
-    
+
 }
 .main{
     margin:auto 5%;
@@ -122,9 +142,9 @@ h2{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
-.recently img{  
+.recently img{
     width: 250px;
 }
 
@@ -140,7 +160,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 .footer{
     height: 20vh;
@@ -152,5 +172,5 @@ h2{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-    
+
 }
