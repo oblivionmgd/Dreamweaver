@@ -52,7 +52,7 @@ body{
 /*    position:relative;
     overflow: hidden;*/
     height: 100vh;
-
+    -webkit-transform:translate3d(0,0,0);
 }
 /*.top:before{
     top: -50%;
@@ -163,7 +163,7 @@ h2{
 
 }
 .footer{
-    height: 20vh;
+    height: 15vh;
     position: relative;
 }
 .logo-footer{
