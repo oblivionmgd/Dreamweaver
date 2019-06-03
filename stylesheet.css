@@ -2,28 +2,62 @@
 
 ;
 @import url("style_tablet.css");
-@keyframes open{
-    from{
-        height: 113%;
-    }
-    to{
-        height:80%;
-    }
-}
-@keyframes logoani{
-    from{
-        -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
 
+@keyframes svg{
+    0%{
+        fill:transparent;
+        stroke-dashoffset:2000;
+    } 
+    50%{
+        fill:transparent;
     }
-    to{
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    100%{
+        fill:#fff;
+        stroke-dashoffset:0;
+    }
+    
+}
+@keyframes fade{
+    0%{
+        opacity: 1;
+        z-index:0;
+    }
+    100%{
+        opacity:0;
+        z-index:-10;
     }
 }
 
 @media screen and (min-width : 1280px ){
 
+.loading{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsla(0,0%,10%,1.00);
+    z-index: 0;
+    animation: fade 0.5s 2s linear forwards;
+    }
+    
+#oblogo{
+    position: fixed;
+    width: 25vw;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+    
+    #oblogo path{
+        fill:none;
+        stroke:#fff;
+        stroke-dasharray:2000;
+        stroke-dashoffset:0;
+        stroke-width:1;
+        animation: svg 2s ease-in forwards;
+
+    }
+    
 li{
     font-size: 30px;
     list-style: none;
@@ -38,9 +72,15 @@ li{
     width: 100vw;
     line-height: 75px;
     color: #EDF7F5;
-    z-index: 10;
+    z-index: -1;
     top: 0%;
 }
+
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: #fff;
+    }
+    
 
 
 body{
@@ -49,10 +89,8 @@ body{
     margin: 0px 0px ;
 }
 .top{
-/*    position:relative;
-    overflow: hidden;*/
     height: 100vh;
-    -webkit-transform:translate3d(0,0,0);
+    /*-webkit-transform:translate3d(0,0,0);*/
 }
 /*.top:before{
     top: -50%;
@@ -99,7 +137,7 @@ body{
 video{
     position: absolute;
     width: 90vw;
-    z-index: -10;
+    z-index: -5;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -114,6 +152,7 @@ video{
     top: 84vh;
     text-align: center;
     line-height: 45px;
+    z-index: -1;
     }
 h1{
     font-size: 80px;
@@ -122,7 +161,7 @@ h1{
 }
 .top h1{
     letter-spacing: 10px;
-    z-index: -2;
+    z-index: -3;
 }
 
 
@@ -135,6 +174,7 @@ h2{
 }
 .main{
     margin:auto 5%;
+    z-index: -3;
 }
 
 .works{
