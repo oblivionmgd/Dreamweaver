@@ -108,8 +108,6 @@ body{
     z-index: -1;
 }
 .top:before , .top:after{
-    animation: open 1.5s forwards;
-    animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
     content: "";
     display: block;
     position: absolute;
