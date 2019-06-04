@@ -93,6 +93,10 @@ body{
     height: 100vh;
     /*-webkit-transform:translate3d(0,0,0);*/
 }
+    
+.top img{
+        opacity: 0;
+    }
 /*.top:before{
     top: -50%;
     left: -50%;
