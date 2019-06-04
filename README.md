@@ -1,6 +1,6 @@
 # betafolio
 
-[Link](oblivionmgd.github.io/betafolio/)
+[Link](https://oblivionmgd.github.io/betafolio/)
 
 # files
 
