@@ -1,5 +1,7 @@
 # betafolio
 
+link:oblivionmgd.github.io/betafolio/
+
 # files
 
 index.html : main page
