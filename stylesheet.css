@@ -147,15 +147,15 @@ video{
     opacity: 0.75;
 }
 .scroll{
-    font-size: 30px;
+    font-size: 2vw;
     letter-spacing: 10px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 84vh;
     text-align: center;
-    line-height: 45px;
-    z-index: -4;
+    line-height: 2.5vw;
+    z-index: -2;
     }
 h1{
     font-size: 80px;
