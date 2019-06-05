@@ -143,7 +143,7 @@
         width: 100vw;
         line-height: 75px;
         color: #EDF7F5;
-        z-index: -1;
+        z-index: auto;
         top: 0;
 }
 
@@ -158,7 +158,7 @@ body{
     overflow: hidden;
     height: 100vh;
 }
-    .top img{
+.top img{
         position: absolute;
         left:0%; 
         top: 50%;
@@ -172,11 +172,12 @@ body{
     padding-left: 30px;
 }
 .name{
+/*    mix-blend-mode: difference;*/
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    line-height: 70%;
+    left: 35%;
+    transform:translate(-50%,-35%);
+    line-height: 100%;
     z-index: -2;
 }
 video{
@@ -190,16 +191,14 @@ video{
     transform: translateX(-50%);
     bottom: 0;
     text-align: center;
-    line-height: 4.5vw;
-    z-index: -4;
+    line-height: 3vw;
+    z-index: -2;
     }
+    
 h1{
     font-size: 50px;
     padding-left: 4vw;
     
-}
-.top h1{
-    z-index: -2;
 }
 
 h2{
@@ -210,6 +209,7 @@ h2{
 }
 .main{
     margin:auto 5%;
+    z-index: -4;
 }
 
 .works{
