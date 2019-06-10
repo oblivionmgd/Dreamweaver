@@ -1,29 +1,6 @@
 @charset "UTF-8";
 
 
-@keyframes hamburger {
-    100%{
-    top: 24px;
-    opacity: 0;
-    }
-}
-@keyframes rotate0{
-    
-    100%{
-        transform: rotate(45deg);
-    }
-}
-@keyframes rotate1{
-    100%{
-        transform: rotate(-45deg);
-    }
-}
-@keyframes menu{
-    100%{
-        opacity: 1;
-    }
-}
-
 @media (max-width : 599px ){
     
     .loading{
@@ -71,70 +48,7 @@
         width: 200px;
     }
     
-    .burger{
-        height: 50px;
-        width: 50px;
-        top: 12px;
-        right: 15px;
-        position: fixed;
-        z-index: 0;
-        
-    }
-    .pan {
-        background-color: #FFFFFF;
-        width: 24px;
-        height: 2px;
-        position: absolute;
-        left: 13px;
-    }
-    
-    .pn0{
-        top:17px;
-    }
-    
-    .pn1{
-        top:24px;
-    }
-    
-    .pn2{
-        top:31px;
-    }
-    
-    .burger:hover .pn1{
-        animation: hamburger 0.25s, ease ;
-        animation-fill-mode: forwards;
-    }
-    .burger:hover .pn0{
-        animation: hamburger 0.25s, ease ;
-        animation-fill-mode: forwards;
-    }
-    .burger:hover .pn2{
-        animation: hamburger 0.25s, ease ;
-        animation-fill-mode: forwards;
-    }
-    
-    .close{
-        height: 50px;
-        width: 50px;
-        top: 12px;
-        right: 15px;
-        position: fixed;
-        z-index: 4;
-    }
-    .close0 , .close1{
-        background-color: #FFFFFF;
-        width: 24px;
-        height: 2px;
-        position: absolute;
-        left: 13px;   
-        top: 24px;
-    }
-    .burger:hover .close0{
-        animation: rotate0 0.25s ease 0.25s forwards;
-    }
-    .burger:hover .close1{
-        animation: rotate1 0.25s ease 0.25s forwards;
-    }
+
     
     .header{
         position: fixed;
