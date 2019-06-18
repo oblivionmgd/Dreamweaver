@@ -131,7 +131,7 @@ body
     left: 39px;
 }
 
-#menu_checkbox:checked + #menu_label #menu_text_bar:before
+#menu_checkbox:hover + #menu_label #menu_text_bar:before
 {
     animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
 }
@@ -166,11 +166,12 @@ body
     }
     
     li{
-    color: #333;
+/*    color: #333;
     font-size: 30px;
     list-style: none;
     padding-right: 30px;
-    line-height: normal;
+    line-height: normal;*/
+    opacity: 0;
 }
     .header-link{
         background-color: #F2F2F2;
