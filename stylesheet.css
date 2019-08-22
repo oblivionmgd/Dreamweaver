@@ -7,7 +7,7 @@
     0%{
         fill:transparent;
         stroke-dashoffset:2000;
-    } 
+    }
     50%{
         fill:transparent;
         stroke-dashoffset:0;
@@ -16,7 +16,7 @@
         fill:#fff;
 
     }
-    
+
 }
 @keyframes fade{
     0%{
@@ -39,7 +39,7 @@
     z-index: 0;
     animation: fade 0.5s 1.5s ease forwards;
     }
-    
+
 #oblogo{
     position: fixed;
     width: 25vw;
@@ -48,7 +48,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-    
+
     #oblogo path{
         fill:none;
         stroke:#fff;
@@ -58,7 +58,7 @@
         animation: svg 1.5s linear forwards;
 
     }
-    
+
 li{
     font-size: 30px;
     list-style: none;
@@ -81,7 +81,7 @@ a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     color: #fff;
     }
-    
+
 
 
 body{
@@ -93,9 +93,10 @@ body{
     height: 100vh;
     /*-webkit-transform:translate3d(0,0,0);*/
 }
-    
+
 .top img{
         opacity: 0;
+        z-index: -10;
     }
 /*.top:before{
     top: -50%;
