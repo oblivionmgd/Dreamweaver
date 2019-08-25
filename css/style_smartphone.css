@@ -188,8 +188,9 @@ h2{
     flex-wrap: wrap;
     
 }
-.recently img{  
+.works img{  
     width: 250px;
+    border-radius: 10px;
 }
 
 .about img{
