@@ -18,6 +18,11 @@ html, body
 {
     height: 100%;
 }
+    
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: #fff;
+    }
 
 body
 {
@@ -191,8 +196,23 @@ h2{
 .works img{  
     width: 250px;
     border-radius: 10px;
+    z-index: -4;
 }
-
+.works figcaption{
+    position: absolute;
+    margin-top: -255px;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    background-color: rgba(0,0,0,0.35);
+}
+    .works h3{
+        position: absolute;
+        color: #fff;
+        left: 10px;
+        top: 150px;
+    }
+    
 .about img{
 
 }

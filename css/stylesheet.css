@@ -93,31 +93,6 @@ body{
         opacity: 0;
         z-index: -10;
     }
-/*.top:before{
-    top: -50%;
-    left: -50%;
-    transform: rotate(-3deg);
-    transform-origin: left center;
-    z-index: -1;
-}
-.top:after{
-    bottom: -75%;
-    right: -50%;
-    transform: rotate(-3deg);
-    transform-origin: left center;
-    z-index: -1;
-}
-.top:before , .top:after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 200%;
-    height: 80%;
-    background-color: #fff;
-    overflow-x: hidden;
-    z-index: -1;
-}
-   */
 
 .logo{
     font-size:45px;
@@ -186,6 +161,7 @@ h2{
     position: relative;
     width: 250px;
     border-radius: 10px;
+    z-index: -4;
 
 }
 .works figcaption{
@@ -194,11 +170,14 @@ h2{
     border-radius: 10px;
     height: 250px;
     width: 250px;
-    background-color: rgba(0,0,0,0.30);
+    background-color: rgba(0,0,0,0.35);
+    z-index: -4;
 }
     .works h3{
+        position: absolute;
         color: #fff;
-        text-align: center;
+        left: 10px;
+        top: 150px;
     }
 
 .social img{
