@@ -32,6 +32,33 @@
         left: 0vw;
     }
 }
+@keyframes mask_details{
+    0%{
+        clip-path: inset(0 67% 0 0);
+        -webkit-clip-path: inset(0 67% 0 0);
+    }
+    100%{
+        clip-path: inset(0 33% 0 0);
+        -webkit-clip-path: inset(0 33% 0 0);
+    }
+}
+@keyframes border{
+    0%{
+        left: 33vw;
+    }
+    100%{
+        left: 66vw;
+    }
+}
+@keyframes caption{
+    0%{
+        bottom: 10vh;
+    }
+    100%{
+        bottom: -20vh;
+    }
+}
+
 @media screen and (min-width : 600px ){
 
     .loading{
@@ -76,7 +103,7 @@
         width: 100vw;
         line-height: 75px;
         color: #EDF7F5;
-        z-index: auto;
+        z-index: 0;
         top: 0%;
     }
 
@@ -166,7 +193,7 @@
         position: fixed;
         padding: 100vh 0px;
         left: 33vw;
-        z-index: -7;
+        z-index: -1;
         border: solid 5px #000; 
         }
     .works_bg{
@@ -179,6 +206,7 @@
     .caption{
         position: fixed;
         bottom: 10vh;
+        left: 5vw;
         }
 
     .works{
@@ -200,14 +228,10 @@
     #toggle{
         display: none;
     }
-    
-    #toggle:checked ~ .img_details{
-        animation: img_details 1s cubic-bezier(1, 0, 0, 1) forwards;
-    }
 
     .works figcaption{
         position: absolute;
-        margin-top: -20.5vw;
+        margin-top: -20.25vw;
         border-radius: 10px;
         height: 20vw;
         width: 20vw;
@@ -216,16 +240,18 @@
     }
     .img_details{
         position: fixed;
-        left: 33vw;
+        left: 0;
         top: 1px;
         height: 100vh;
         width: 100vw;
-        clip-path: inset(0 33vw 0 0);
-        z-index: -9;
+        z-index: -2;
+        -webkit-clip-path: inset(0 67% 0 0);
         }
     .img_details img{
-        height: 100vh;
-        width: auto;
+        position: fixed;
+        left: 33vw;
+        height: auto;
+        width: 66vw;
         }
     .works h3{
             position: absolute;
@@ -233,6 +259,21 @@
             left: 10px;
             bottom: 0px;
         }
+    
+    /*---------WORKS ANIMATION--------------------*/
+    
+    #toggle:checked ~ .works > .img_details img{
+        animation: img_details 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
+    }
+    #toggle:checked ~ .works > .img_details{
+        animation: mask_details 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
+    }
+    #toggle:checked ~ .works > .border{
+        animation: border 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
+    }
+    #toggle:checked ~ .caption{
+        animation: caption 1s cubic-bezier(.8, 0, 0, .8) forwards;
+    }
 
     /*-------------------------------------------*/
 
