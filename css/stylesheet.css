@@ -28,6 +28,9 @@
     0%{
         left: 33vw;
     }
+    50%{
+        left: 0vw;
+    }
     100%{
         left: 0vw;
     }
@@ -37,14 +40,21 @@
         clip-path: inset(0 67% 0 0);
         -webkit-clip-path: inset(0 67% 0 0);
     }
-    100%{
+    50%{
         clip-path: inset(0 33% 0 0);
         -webkit-clip-path: inset(0 33% 0 0);
+    }
+    100%{
+        clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0 0 0);
     }
 }
 @keyframes border{
     0%{
         left: 33vw;
+    }
+    50%{
+        left: 66vw;
     }
     100%{
         left: 66vw;
@@ -56,6 +66,14 @@
     }
     100%{
         bottom: -20vh;
+    }
+}
+@keyframes works_list{
+    0%{
+        left: 0vw;
+    }
+    100%{
+        left: -33vw;
     }
 }
 
@@ -185,6 +203,21 @@
         margin:auto 5%;
         z-index: -4;
     }
+    .works{
+        position: relative;
+        padding-top:10vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .works img{
+        position: relative;
+        width: 20vw;
+        border-radius: 10px;
+        z-index: -4;
+
+    }
 
     /*-----------WORKS-------------------*/
 
@@ -208,28 +241,28 @@
         bottom: 10vh;
         left: 5vw;
         }
-
-    .works{
+    
+    .works_list{
         position: relative;
         padding-top:10vh;
-        padding-left:33vw;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
     }
-    .works img{
+    .works_list img{
         position: relative;
         width: 20vw;
         border-radius: 10px;
         z-index: -4;
 
     }
+    
     #toggle{
         display: none;
     }
 
-    .works figcaption{
+    .works_list figcaption{
         position: absolute;
         margin-top: -20.25vw;
         border-radius: 10px;
@@ -246,30 +279,41 @@
         width: 100vw;
         z-index: -2;
         -webkit-clip-path: inset(0 67% 0 0);
-        }
+    }
     .img_details img{
         position: fixed;
         left: 33vw;
         height: auto;
         width: 66vw;
-        }
-    .works h3{
-            position: absolute;
-            color: #fff;
-            left: 10px;
-            bottom: 0px;
-        }
+    }
+    .works_list h3{
+        position: absolute;
+        color: #fff;
+        left: 10px;
+        bottom: 0px;
+    }
+    .img_details h3{
+        word-wrap: normal;
+        font-size: 20pt;
+        position: fixed;
+        left: 68vw;
+        top: 15vh;
+    }
+    
     
     /*---------WORKS ANIMATION--------------------*/
     
-    #toggle:checked ~ .works > .img_details img{
+    #toggle:checked ~ .img_details > .mir img{
         animation: img_details 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
     }
-    #toggle:checked ~ .works > .img_details{
+    #toggle:checked ~ .img_details{
         animation: mask_details 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
     }
-    #toggle:checked ~ .works > .border{
+    #toggle:checked ~ .works_list > .border{
         animation: border 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
+    }
+    #toggle:checked ~ .works_list{
+        animation: works_list 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
     }
     #toggle:checked ~ .caption{
         animation: caption 1s cubic-bezier(.8, 0, 0, .8) forwards;
