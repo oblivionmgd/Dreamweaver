@@ -20,8 +20,12 @@
     </div>
 
     <div class="main">
-      <input type="checkbox" id="toggle">
-      <div class="caption">
+        <input type="checkbox" id="toggle_mir" style="display: none;">
+        <input type="checkbox" id="toggle_rainy" style="display: none;">
+        <input type="checkbox" id="toggle_trackmaker" style="display: none;">
+        <input type="checkbox" id="toggle_lt" style="display: none;">
+        
+        <div class="caption">
             <h1 style="padding-left: 0; margin: 0px;">Works</h1>
             <blockquote style="margin: 0;">
                 <h3>Click thumbnail to watch contents.</h3>
@@ -29,7 +33,7 @@
         </div>
         <div class="works_list" style="padding-left: 33vw">
             <div class="border"></div>
-                <label for="toggle" id="toggle_btn">
+                <label for="toggle_mir" id="toggle_mir_btn">
                     <figure class="mir"> <img src="img/thumbnail/mir.png" alt="ipx">
                         <figcaption>
                             <h3>"Motion Diary" series<br>
@@ -37,26 +41,33 @@
                         </figcaption>   
                     </figure>
                 </label> 
-                <figure class="rainy"> <img src="img/thumbnail/rainy.png" alt="rainy">
-                    <figcaption>
-                        <h3>"Motion Diary" series<br>
-                          -001 "Rainy day"</h3>
-                    </figcaption>
-                </figure>
+            
+                <label for="toggle_rainy" id="toggle_rainy_btn">
+                    <figure class="rainy"> <img src="img/thumbnail/rainy.png" alt="rainy">
+                        <figcaption>
+                            <h3>"Motion Diary" series<br>
+                              -001 "Rainy day"</h3>
+                        </figcaption>
+                    </figure>
+                </label>
+            
+                <label for="toggle_trackmaker" id="toggle_trackmaker_btn">
+                    <figure class="trackmaker"> <img src="img/thumbnail/trackmaker.png" alt="ipx">
+                      <figcaption>
+                        <h3>Indoor kei nara trackmaker<br>
+                          (pnk remix)</h3>
+                      </figcaption>
+                    </figure>
+                </label>
 
-                <figure class="trackmaker"> <img src="img/thumbnail/trackmaker.png" alt="ipx">
-                  <figcaption>
-                    <h3>Indoor kei nara trackmaker<br>
-                      (pnk remix)</h3>
-                  </figcaption>
-                </figure>
-
-                <figure class="LT"> <img src="img/thumbnail/LT.png" alt="ipx">
-                  <figcaption>
-                    <h3>College Lightning talk show<br>
-                      poster design</h3>
-                  </figcaption>
-                </figure>
+                <label for="toggle_lt" id="toggle_lt_btn">
+                    <figure class="LT"> <img src="img/thumbnail/LT.png" alt="ipx">
+                      <figcaption>
+                        <h3>College Lightning talk show<br>
+                          poster design</h3>
+                      </figcaption>
+                    </figure>
+                </label>
 
                 <figure class="aftershcool"> <img src="img/thumbnail/afterschool.png" alt="aftershcool">
                   <figcaption>
@@ -70,14 +81,27 @@
                   </figcaption>
                 </figure>
         </div>
+        <label for="toggle_mir" class="toggle_back_btn" style="text-align: right;">
+            <h3>Back to list</h3>
+        </label>
         <div class="img_details">
-            <div class="mir">
+            <div class="mir_details">
                 <img src="img/thumbnail/mir.png" alt="mirdetails">
                 <h3 style="color: #000;">
                     その週であった出来事をモーションに落とし込む「Motion Diary」<br>
                     2本目はMir学習のために制作した習作となった。<br>
                     DotとWireFrameと地形、水の表現をそれぞれ行っており、Mirの扱い方をふわっと学習することができた。<br>
                     まだ購入してから日が経ってないため今後の作品にも取り入れていきたい。
+                </h3>
+            </div>
+            <div class="rainy_details">
+                <img src="img/thumbnail/rainy.png" alt="rainy">
+                <h3 style="color: #000;">
+                    その週あった出来事をモーションに落とし込む「Motion Diary。
+                    モチベーションの回復と研究のために始めてみたシリーズ。<br>
+                    MoSplineとClonerを用いてアニメーション可能な傘を作り、iOSのお天気アプリ風
+                    のUIと一緒に動かした。<br>
+                    因みにこの週は天気予報が外れまくって全日晴れた。
                 </h3>
             </div>
         </div>
