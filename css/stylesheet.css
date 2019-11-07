@@ -225,10 +225,6 @@
         height: 100vh;
         width: 100vw;
         z-index: -2;
-/*        clip-path: inset(0 100% 0 0);
-        -webkit-clip-path: inset(0 100% 0 0);
-        transition: clip-path 1s cubic-bezier(.8, 0, 0, .8);
-        transition: -webkit-clip-path 1s cubic-bezier(.8, 0, 0, .8);*/
 
     }
     .img_details img{
@@ -250,21 +246,20 @@
         top: 10vh;
         padding-right: 2.5vw;
     }
-    .mir_details h3 {
-        opacity: 0;
+	
+	div[class$="_details"] h3{
+		opacity: 0;
 		clip-path: inset(0 100% 0 0);
 		transition: opacity .01s linear .5s, clip-path 1s cubic-bezier(.8, 0, .2, 1); 
-    }
-    .mir_details img{
-		clip-path: inset(0 100% 0 0);
-        -webkit-clip-path: inset(0 100% 0 0);
-        left: 33vw;
+	}
+    div[class$="_details"] img {
+        clip-path: inset(0 100% 0 0);
+		-webkit-clip-path: inset(0 100% 0 0);
+		left: 33vw;
 		transition: left 1s cubic-bezier(.8, 0, .2, 1), clip-path 1s cubic-bezier(.8, 0, .2, 1);
     }
-    .rainy_details * {
-        opacity: 0;
-    }
-    .toggle_back_btn h3{
+	
+    label[class^="toggle_back"] > h3{
         font-size: 20pt;
         font-style: italic;
         position: fixed;
@@ -272,20 +267,18 @@
         bottom: 0;
         transition: right .5s cubic-bezier(.8, 0, .2, 1) .5s;
     }
-
     /*--------------WORKS ANIMATION---------------*/
     /*----------------WORKS MIR-------------------*/
     #toggle_mir:checked ~ .img_details > .mir_details img{
         left: 0vw;
 		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
         opacity: 1;
     }
     #toggle_mir:checked ~ .img_details > .mir_details h3{
 		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
         opacity: 1;
-    }
-    #toggle_mir:checked ~ .img_details{
-        /*clip-path: inset(0 0 0 0);*/
     }
     #toggle_mir:checked ~ .works_list > .border{
         left: 66vw;
@@ -297,29 +290,134 @@
     #toggle_mir:checked ~ .caption{
         bottom: -20vh;
     }
-    #toggle_mir:checked ~ .toggle_back_btn h3{
+    #toggle_mir:checked ~ .toggle_back_mir h3{
         right: 5vw;
     }
 
     /*----------------WORKS RAINY-----------------*/
     #toggle_rainy:checked ~ .img_details > .rainy_details img{
-        animation: img_details 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
+        left: 0vw;
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
         opacity: 1;
     }
     #toggle_rainy:checked ~ .img_details > .rainy_details h3{
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
         opacity: 1;
     }
-    #toggle_rainy:checked ~ .img_details{
-        animation: mask_details 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
-    }
     #toggle_rainy:checked ~ .works_list > .border{
-        animation: border 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
+        left: 66vw;
     }
     #toggle_rainy:checked ~ .works_list{
-        animation: works_list 1s .5s cubic-bezier(.8, 0, 0, .8) forwards;
+        left: -33vw;
+        z-index: -9999;
     }
     #toggle_rainy:checked ~ .caption{
-        animation: caption 1s cubic-bezier(.8, 0, 0, .8) forwards;
+        bottom: -20vh;
+    }
+    #toggle_rainy:checked ~ .toggle_back_rainy h3{
+        right: 5vw;
+    }
+	/*---------------WORKS INDRK-----------------*/
+	#toggle_indrk:checked ~ .img_details > .indrk_details img{
+        left: 0vw;
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+    #toggle_indrk:checked ~ .img_details > .indrk_details h3{
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+    #toggle_indrk:checked ~ .works_list > .border{
+        left: 66vw;
+    }
+    #toggle_indrk:checked ~ .works_list{
+        left: -33vw;
+        z-index: -9999;
+    }
+    #toggle_indrk:checked ~ .caption{
+        bottom: -20vh;
+    }
+    #toggle_indrk:checked ~ .toggle_back_indrk h3{
+        right: 5vw;
+    }
+	/*--------------WORKS LT---------------------*/
+	#toggle_lt:checked ~ .img_details > .lt_details img{
+        left: 0vw;
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+    #toggle_lt:checked ~ .img_details > .lt_details h3{
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+    #toggle_lt:checked ~ .works_list > .border{
+        left: 66vw;
+    }
+    #toggle_lt:checked ~ .works_list{
+        left: -33vw;
+        z-index: -9999;
+    }
+    #toggle_lt:checked ~ .caption{
+        bottom: -20vh;
+    }
+    #toggle_lt:checked ~ .toggle_back_lt h3{
+        right: 5vw;
+    }
+	/*--------------WORKS AFTERSCHOOL------------*/
+	#toggle_after:checked ~ .img_details > .after_details img{
+        left: 0vw;
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+    #toggle_after:checked ~ .img_details > .after_details h3{
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+    #toggle_after:checked ~ .works_list > .border{
+        left: 66vw;
+    }
+    #toggle_after:checked ~ .works_list{
+        left: -33vw;
+        z-index: -9999;
+    }
+    #toggle_after:checked ~ .caption{
+        bottom: -20vh;
+    }
+    #toggle_after:checked ~ .toggle_back_after h3{
+        right: 5vw;
+    }
+	/*--------------WORKS iPX--------------------*/
+	#toggle_ipx:checked ~ .img_details > .ipx_details img{
+        left: 0vw;
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+    #toggle_ipx:checked ~ .img_details > .ipx_details h3{
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+    #toggle_ipx:checked ~ .works_list > .border{
+        left: 66vw;
+    }
+    #toggle_ipx:checked ~ .works_list{
+        left: -33vw;
+        z-index: -9999;
+    }
+    #toggle_ipx:checked ~ .caption{
+        bottom: -20vh;
+    }
+    #toggle_ipx:checked ~ .toggle_back_ipx h3{
+        right: 5vw;
     }
     /*-------------------------------------------*/
 
