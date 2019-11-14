@@ -90,7 +90,7 @@
     }
 
     .top img{
-            opacity: 0;
+            display: none;
             z-index: -10;
         }
 
@@ -191,7 +191,7 @@
 
     .works_list{
         position: relative;
-        padding-top:10vh;
+        margin:10vh 0 0 33vw;
         left: 0vw;
         display: flex;
         justify-content: space-evenly;
