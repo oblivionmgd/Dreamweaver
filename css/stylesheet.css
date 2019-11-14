@@ -130,8 +130,6 @@
         }
     h1{
         font-size: 80px;
-        padding-left: 4vw;
-
     }
     .top h1{
         letter-spacing: 10px;
@@ -426,6 +424,11 @@
         width: 2vw;
         margin-left: 50px;
     }
+	.socialicons img{
+		width: 50px;
+		height: 50px;
+		margin: 0;
+	}
     .intro{
         display: flex;
         flex-wrap: wrap;
@@ -435,7 +438,8 @@
     }
     .footer{
         height: 15vh;
-        position: relative;
+        position: absolute;
+		bottom: 0;
     }
     .logo-footer{
         position: absolute;
