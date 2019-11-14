@@ -250,13 +250,14 @@
 	div[class$="_details"] h3{
 		opacity: 0;
 		clip-path: inset(0 100% 0 0);
-		transition: opacity .01s linear .5s, clip-path 1s cubic-bezier(.8, 0, .2, 1); 
+		-webkit-clip-path: inset(0 100% 0 0 );
+		transition: opacity .01s linear .5s, clip-path 1s cubic-bezier(.8, 0, .2, 1), -webkit-clip-path 1s cubic-bezier(.8, 0, .2, 1); 
 	}
     div[class$="_details"] img {
         clip-path: inset(0 100% 0 0);
 		-webkit-clip-path: inset(0 100% 0 0);
 		left: 33vw;
-		transition: left 1s cubic-bezier(.8, 0, .2, 1), clip-path 1s cubic-bezier(.8, 0, .2, 1);
+		transition: left 1s cubic-bezier(.8, 0, .2, 1), clip-path 1s cubic-bezier(.8, 0, .2, 1), -webkit-clip-path 1s cubic-bezier(.8, 0, .2, 1);
     }
 	
     label[class^="toggle_back"] > h3{
