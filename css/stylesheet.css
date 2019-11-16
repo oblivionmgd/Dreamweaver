@@ -54,7 +54,7 @@
 
         }
 
-    li{
+    .header li{
         font-size: 30px;
         list-style: none;
         float: right;
@@ -164,7 +164,18 @@
         z-index: -4;
 
     }
-
+	/*----------ABOUT-------------------*/
+	.skills{
+		display: flex;
+	}
+	.skills img{
+		width: 75px;
+	}
+	.skills li{
+		padding: 0 30px;
+		list-style: none;
+		text-align: center;
+	}
     /*-----------WORKS-------------------*/
 
 
