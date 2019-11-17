@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="header" style="z-index: 0;">
+    <div class="header">
         <div class="logo"><a href="index.html">Oblivion</a></div>
         <ul>
             <li><a href="contact.html">Contact</a></li>
@@ -20,7 +20,8 @@
     </div>
 
     <div class="main">
-        <input type="checkbox" id="toggle_mir" style="display: none;">
+        <input type="checkbox" id="toggle_reel2019" style="display: none;">
+		<input type="checkbox" id="toggle_mir" style="display: none;">
         <input type="checkbox" id="toggle_rainy" style="display: none;">
         <input type="checkbox" id="toggle_indrk" style="display: none;">
         <input type="checkbox" id="toggle_lt" style="display: none;">
@@ -33,10 +34,19 @@
                 <h3>Click thumbnail to watch contents.</h3>
             </blockquote>
         </div>
-        <div class="works_list" >
+      <div class="works_list" >
             <div class="border"></div>
-                <label for="toggle_mir" id="toggle_mir_btn">
-                    <figure class="mir"> <img src="img/thumbnail/mir.png" alt="ipx">
+			
+                <label for="toggle_reel2019" id="toggle_reel2019_btn">
+                    <figure class="reel2019"> <img src="img/thumbnail/reel2019.png" alt="reel2019">
+                        <figcaption>
+                            <h3>Reel 2019</h3>
+                        </figcaption>
+                    </figure>
+                </label>
+				
+				<label for="toggle_mir" id="toggle_mir_btn">
+                    <figure class="mir"> <img src="img/thumbnail/mir.png" alt="mir">
                         <figcaption>
                             <h3>"Motion Diary" series<br>
                             -002 "Mir"</h3>
@@ -54,7 +64,7 @@
                 </label>
 
                 <label for="toggle_indrk" id="toggle_trackmaker_btn">
-                    <figure class="trackmaker"> <img src="img/thumbnail/trackmaker.png" alt="ipx">
+                    <figure class="trackmaker"> <img src="img/thumbnail/trackmaker.png" alt="trackmaker">
                       <figcaption>
                         <h3>Indoor kei nara trackmaker<br>
                           (pnk remix)</h3>
@@ -63,20 +73,13 @@
                 </label>
 
                 <label for="toggle_lt" id="toggle_lt_btn">
-                    <figure class="LT"> <img src="img/thumbnail/LT.png" alt="ipx">
+                    <figure class="LT"> <img src="img/thumbnail/LT.png" alt="lt">
                       <figcaption>
                         <h3>College Lightning talk show<br>
                           poster design</h3>
                       </figcaption>
                     </figure>
                 </label>
-				<label for="toggle_after" id="toggle_after_btn">
-					<figure class="aftershcool"> <img src="img/thumbnail/afterschool.png" alt="aftershcool">
-					  <figcaption>
-						<h3>"Afterschool Output" series</h3>
-					  </figcaption>
-					</figure>
-				</label>
 
 				<label for="toggle_ipx" id="toggle_ipx_btn">
 					<figure class="ipx"> <img src="img/thumbnail/ipx.png" alt="ipx">
@@ -86,7 +89,10 @@
 					</figure>
 				</label>
         </div>
-        <label for="toggle_mir" class="toggle_back_mir" style="text-align: right;">
+        <label for="toggle_reel2019" class="toggle_back_reel2019" style="text-align: right;">
+            <h3>Back to list</h3>
+        </label>
+		<label for="toggle_mir" class="toggle_back_mir" style="text-align: right;">
             <h3>Back to list</h3>
         </label>
 		<label for="toggle_rainy" class="toggle_back_rainy" style="text-align: right;">
@@ -98,16 +104,22 @@
 		<label for="toggle_lt" class="toggle_back_lt" style="text-align: right;">
             <h3>Back to list</h3>
         </label>
-		<label for="toggle_after" class="toggle_back_after" style="text-align: right;">
-            <h3>Back to list</h3>
-        </label>
 		<label for="toggle_ipx" class="toggle_back_ipx" style="text-align: right;">
 			<h3>Back to list</h3>
 		</label>
 
         <div class="img_details">
-            <div class="mir_details">
-                <img src="img/thumbnail/mir.png" alt="mirdetails">
+            <div class="reel2019_details" style="z-index: 0;">
+				<video preload="auto" autoplay loop muted><source src="img/thumbnail/Reel2019.MP4"></video>
+                <h3 style="color: #000;">
+                    製作物のリール<br>
+					2018年8月~2019年10月の作品をまとめた<br>
+					曲はOttiki氏(Kusemono Records)よりWe will rise again...をお借りした。<br>
+					フルサイズはVimeoをご覧ください
+                </h3>
+            </div>
+			<div class="mir_details">
+				<video preload="auto" autoplay loop muted><source src="img/thumbnail/Mir.mp4"></video>
                 <h3 style="color: #000;">
                     その週であった出来事をモーションに落とし込む「Motion Diary」<br>
                     2本目はMir学習のために制作した習作となった。<br>
@@ -116,7 +128,7 @@
                 </h3>
             </div>
             <div class="rainy_details">
-                <img src="img/thumbnail/rainy.png" alt="rainy">
+                <video preload="auto" autoplay loop muted><source src="img/thumbnail/rainy.mp4"></video>
                 <h3 style="color: #000;">
                     その週あった出来事をモーションに落とし込む「Motion Diary」
                     モチベーションの回復と研究のために始めてみたシリーズ。<br>
@@ -126,11 +138,12 @@
                 </h3>
             </div>
             <div class="indrk_details">
-                <img src="img/thumbnail/trackmaker.png" alt="indrk">
+                <video preload="auto" autoplay loop muted><source src="img/thumbnail/Trackmaker.mp4"></video>
                 <h3 style="color: #000;">
                     モチベーションの回復用にやってみたいことだけを盛った作品<br>
                     CGとシェイプモーションを合わせた作風の作品となっている。<br>
-                    PCがCG向きでなく使用できなかったシーンもあるので続きを作りたい。
+                    PCがCG向きでなく使用できなかったシーンもあるので続きを作りたい。<br>
+					フルサイズはVimeoをご覧ください。
                 </h3>
             </div>
             <div class="lt_details">
@@ -140,22 +153,18 @@
                   テーマがアイデアの爆発といったものだったので過去のCG作品が飛び出すようなものにした。<br>
                   CGが気に入ってるのでスマホサイズのHomeや名刺でまだ活躍している。
                 </h3>
-			      </div>
-			      <div class="after_details">
-                <img src="img/thumbnail/afterschool.png" alt="afterschool">
-                <h3 style="color: #000;">
-                    5秒くらいのループをぐちゃっと詰め込みました<br>
-                </h3>
+	      </div>
 			      </div>
 			      <div class="ipx_details">
-                <img src="img/thumbnail/ipx.png" alt="afterschool">
+                <video preload="auto" autoplay loop muted><source src="img/thumbnail/ipx.mp4"></video>
                 <h3 style="color: #000;">
-                  初めてのC4Dでのモデリング、アニメーション作品<br>
-
+                	初めてのC4Dでのモデリング、アニメーション作品<br>
+					C4Dでのモデリングのワークフローが確立した。<br>
+					アニメーションはAeとの操作感の違いに慣れなかったため今後練習していきたい。
                 </h3>
 			      </div>
 
-		    </div>
+      </div>
     </div>
 	<div class="footer" style="position: relative;">
         <div class="logo-footer">
