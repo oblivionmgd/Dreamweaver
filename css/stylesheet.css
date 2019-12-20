@@ -134,7 +134,7 @@
         z-index: -2;
         }
     h1{
-        font-size: 80px;
+        font-size: 50px;
     }
     .top h1{
         letter-spacing: 10px;
@@ -151,7 +151,7 @@
     }
     .main{
 		padding-top: 1%;
-        margin: 5%;
+        margin: 75px 5%;
         z-index: -4;
     }
     .works{
@@ -455,9 +455,14 @@
         margin-left: 50px;
     }
 	.socialicons img{
+		display: flex;
 		width: 50px;
 		height: 50px;
 		margin: 0;
+	}
+	.social h3{
+		margin: 5px;
+		font-size: 20pt;
 	}
     .intro{
         display: flex;
