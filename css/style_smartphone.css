@@ -284,10 +284,10 @@
 
     .works_list figcaption{
         position: absolute;
-        margin-top: -76vw;
+        margin-top: -81.5vw;
         border-radius: 10px;
-        height: 75vw;
-        width: 75vw;
+        height: 80vw;
+        width: 80vw;
         background-color: rgba(0,0,0,0.35);
         z-index: -4;
     }
