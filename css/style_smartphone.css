@@ -239,6 +239,7 @@
 	/*----------ABOUT-------------------*/
 	.skills{
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 	}
 	.skills img{
