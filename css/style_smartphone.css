@@ -260,6 +260,7 @@
     .caption{
         position: relative;
         left: 5vw;
+		bottom: 0;
         transition: bottom 1s cubic-bezier(.8, 0, .2, 1);
         z-index: -9999;
         }
@@ -315,8 +316,8 @@
     }
     .img_details h3{
         word-wrap: normal;
-        font-size: 12pt;
-        top: 10vh;
+        font-size: 10pt;
+        top: 20vh;
         margin: 0 10vw 
     }
 	.img_details a{
@@ -372,7 +373,7 @@
         z-index: -9999;
     }
     #toggle_reel2019:checked ~ .caption{
-        bottom: -20vh;
+        bottom: 20vh;
     }
     #toggle_reel2019:checked ~ .toggle_back_reel2019 h3{
         right: 5vw;
@@ -397,7 +398,7 @@
         z-index: -9999;
     }
     #toggle_mir:checked ~ .caption{
-        bottom: -20vh;
+        bottom: 20vh;
     }
     #toggle_mir:checked ~ .toggle_back_mir h3{
         right: 5vw;
@@ -422,7 +423,7 @@
         z-index: -9999;
     }
     #toggle_rainy:checked ~ .caption{
-        bottom: -20vh;
+        bottom: 20vh;
     }
     #toggle_rainy:checked ~ .toggle_back_rainy h3{
         right: 5vw;
@@ -447,7 +448,7 @@
         z-index: -9999;
     }
     #toggle_indrk:checked ~ .caption{
-        bottom: -20vh;
+        bottom: 20vh;
     }
     #toggle_indrk:checked ~ .toggle_back_indrk h3{
         right: 5vw;
@@ -472,7 +473,7 @@
         z-index: -9999;
     }
     #toggle_lt:checked ~ .caption{
-        bottom: -20vh;
+        bottom: 20vh;
     }
     #toggle_lt:checked ~ .toggle_back_lt h3{
         right: 5vw;
@@ -497,7 +498,7 @@
         z-index: -9999;
     }
     #toggle_ipx:checked ~ .caption{
-        bottom: -20vh;
+        bottom: 20vh;
     }
     #toggle_ipx:checked ~ .toggle_back_ipx h3{
         right: 5vw;
