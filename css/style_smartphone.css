@@ -234,6 +234,10 @@
 
     }
 	/*----------ABOUT-------------------*/
+	.intro img{
+		width: 250px;
+		border-radius: 125px;
+	}
 	.skills{
 		display: flex;
 		flex-wrap: wrap;
