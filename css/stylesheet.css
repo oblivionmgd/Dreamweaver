@@ -170,6 +170,10 @@
 
     }
 	/*----------ABOUT-------------------*/
+	.intro_img img{
+		width: 250px;
+		border-radius: 125px;
+	}
 	.skills{
 		display: flex;
 		justify-content: center;
