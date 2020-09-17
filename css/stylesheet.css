@@ -153,7 +153,7 @@
     margin: 75px 5%;
     z-index: -4;
   }
-  .works{
+  .recent{
     position: relative;
     padding-top:10vh;
     display: flex;
@@ -161,7 +161,7 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .works img{
+  .recent img{
     position: relative;
     width: 20vw;
     border-radius: 10px;
@@ -191,6 +191,7 @@
   .border{
     position: fixed;
     padding: 100vh 0px;
+		top: 0;
     left: 33vw;
     z-index: -1;
     border: solid 5px #000;
@@ -280,12 +281,14 @@
     transition: opacity .01s linear .5s, clip-path 1s cubic-bezier(.8, 0, .2, 1), -webkit-clip-path 1s cubic-bezier(.8, 0, .2, 1);
   }
   div[class$="_details"] img {
+		height: 100vh;
     clip-path: inset(0 100% 0 0);
     -webkit-clip-path: inset(0 100% 0 0);
     left: 33vw;
     transition: left 1s cubic-bezier(.8, 0, .2, 1), clip-path 1s cubic-bezier(.8, 0, .2, 1), -webkit-clip-path 1s cubic-bezier(.8, 0, .2, 1);
   }
   div[class$="_details"] video {
+		height: 100vh;
     clip-path: inset(0 100% 0 0);
     -webkit-clip-path: inset(0 100% 0 0);
     left: 33vw;
@@ -303,7 +306,7 @@
   /*--------------WORKS ANIMATION---------------*/
 	/*----------------WORKS smile-----------------*/
   #toggle_smile:checked ~ .img_details > .smile_details img{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -314,7 +317,7 @@
     opacity: 1;
   }
   #toggle_smile:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 60.5vw;
   }
   #toggle_smile:checked ~ .works_list{
     left: -33vw;
@@ -328,7 +331,7 @@
   }
 	/*----------------WORKS Fnotfound-----------------*/
   #toggle_Fnotfound:checked ~ .img_details > .Fnotfound_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -339,7 +342,7 @@
     opacity: 1;
   }
   #toggle_Fnotfound:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_Fnotfound:checked ~ .works_list{
     left: -33vw;
@@ -353,7 +356,7 @@
   }
   /*----------------WORKS abandon-----------------*/
   #toggle_abandon:checked ~ .img_details > .abandon_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -364,7 +367,7 @@
     opacity: 1;
   }
   #toggle_abandon:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_abandon:checked ~ .works_list{
     left: -33vw;
@@ -378,7 +381,7 @@
   }
   /*----------------WORKS OneDofW-----------------*/
   #toggle_OneDofW:checked ~ .img_details > .OneDofW_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -389,7 +392,7 @@
     opacity: 1;
   }
   #toggle_OneDofW:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_OneDofW:checked ~ .works_list{
     left: -33vw;
@@ -403,7 +406,7 @@
   }
   /*----------------WORKS playstation-----------------*/
   #toggle_playstation:checked ~ .img_details > .playstation_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -414,7 +417,7 @@
     opacity: 1;
   }
   #toggle_playstation:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_playstation:checked ~ .works_list{
     left: -33vw;
@@ -428,7 +431,7 @@
   }
   /*----------------WORKS Birthday2020-----------------*/
   #toggle_birthday2020:checked ~ .img_details > .birthday2020_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -439,7 +442,7 @@
     opacity: 1;
   }
   #toggle_birthday2020:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_birthday2020:checked ~ .works_list{
     left: -33vw;
@@ -453,7 +456,7 @@
   }
   /*----------------WORKS Reel2019-----------------*/
   #toggle_reel2019:checked ~ .img_details > .reel2019_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -464,7 +467,7 @@
     opacity: 1;
   }
   #toggle_reel2019:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_reel2019:checked ~ .works_list{
     left: -33vw;
@@ -478,7 +481,7 @@
   }
   /*----------------WORKS MIR-------------------*/
   #toggle_mir:checked ~ .img_details > .mir_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -489,7 +492,7 @@
     opacity: 1;
   }
   #toggle_mir:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_mir:checked ~ .works_list{
     left: -33vw;
@@ -503,7 +506,7 @@
   }
   /*----------------WORKS RAINY-----------------*/
   #toggle_rainy:checked ~ .img_details > .rainy_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -514,7 +517,7 @@
     opacity: 1;
   }
   #toggle_rainy:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_rainy:checked ~ .works_list{
     left: -33vw;
@@ -528,7 +531,7 @@
   }
   /*---------------WORKS INDRK-----------------*/
   #toggle_indrk:checked ~ .img_details > .indrk_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -539,7 +542,7 @@
     opacity: 1;
   }
   #toggle_indrk:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_indrk:checked ~ .works_list{
     left: -33vw;
@@ -553,7 +556,7 @@
   }
   /*--------------WORKS LT---------------------*/
   #toggle_lt:checked ~ .img_details > .lt_details img{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -564,7 +567,7 @@
     opacity: 1;
   }
   #toggle_lt:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_lt:checked ~ .works_list{
     left: -33vw;
@@ -578,7 +581,7 @@
   }
   /*--------------WORKS iPX--------------------*/
   #toggle_ipx:checked ~ .img_details > .ipx_details video{
-    left: 0vw;
+    left: -2vw;
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 0 0 0);
     opacity: 1;
@@ -589,7 +592,7 @@
     opacity: 1;
   }
   #toggle_ipx:checked ~ .works_list > .border{
-    left: 66vw;
+    left: 62vw;
   }
   #toggle_ipx:checked ~ .works_list{
     left: -33vw;
